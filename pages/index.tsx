@@ -6,59 +6,22 @@ export default function Home() {
   return (
     <div className="container">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>KLAM SHOP</title>
+        <link rel="icon" href="/images/icon/carts.png" />
       </Head>
 
       <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <div>
-          <Image
-            src="/images/naruto.png" // Route of the image file
-            height={144} // Desired size with correct aspect ratio
-            width={144} // Desired size with correct aspect ratio
-            alt="Your Name"
-          />
-        </div>
-
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <Link href="/posts/first-post">
-            <a className="card">
-              <h3>Documentation &rarr;</h3>
-              <p>My post</p>
-            </a>
-          </Link>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <ul>
+          <li>
+            <Link href="/product/giaydep">Giày dép</Link>
+          </li>
+          <li>
+            <Link href="/product/son">son</Link>
+          </li>
+          <li>
+            <Link href="/product/ban ghe">ban ghe</Link>
+          </li>
+        </ul>
       </main>
 
       <footer>
@@ -68,7 +31,10 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
+          <img src="/images/icon/shark.png" alt="shark logo" className="logo" />
+          <span className="team-name">
+            <strong> {"Team Elevent"}</strong>
+          </span>
         </a>
       </footer>
 
@@ -192,7 +158,7 @@ export default function Home() {
         }
 
         .logo {
-          height: 1em;
+          height: 3em;
         }
 
         @media (max-width: 600px) {
